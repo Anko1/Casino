@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //color: white;
+  font-family: 'Alfa Slab One', cursive;
+}
+button:focus{
+  outline: 0;
+}
+
+body {
+  height: 100vh;
+  background: url("../images/bg.jpg") no-repeat;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  padding: 20px 0;
+  height: 15vh;
+  color: white;
+}
+
+#slot-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  height: 70vh;
+  overflow: auto;
+  
+  .slot {
+    background: url("../images/slot-machine.png") center top no-repeat;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 2% 2%;
+
+    input {
+      position: absolute;
+      bottom: 0;
+      color: black;
+      text-align: center;
+      width: 50%;
+      right: 0;
+      margin: 0;
+    }
+
+    button {
+      position: absolute;
+      bottom: 0;
+      color: black;
+      width: 50%;
+    }
+
+    .cash {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      text-align: center;
+      line-height: 40px;
+      color: white;
+    }
+
+    .sm-info {
+      @extend .cash;
+      background: limegreen;
+      border: 2px solid white;
+      right: 0;
+      left: auto;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .sm-info:focus {
+      background: forestgreen;
+    }
+  }
+
+  .lucky{
+    //background-color: red;
+  }
+}
+
+#casino-control {
+  height: 15vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .info {
+    * {
+      color: black;
+      font-size: 30px;
+    }
+  }
+
+  #add{
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 30px;
+    background-color: forestgreen;
+  }
+}
+
+#sm-info-wrapper {
+  width: 300px;
+  height: 100px;
+  background: lightgray;
+  border-radius: 10px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  * {
+    color: black;
+  }
+
+  div{
+    width: 90%;
+  }
+
+  .exit {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    right: -15px;
+  }
+
+  .total-from::before {
+    content: ' / ';
+  }
+  .total-to::before {
+    content: 'to ';
+  }
+
+  #remove{
+    text-transform: uppercase;
+    background-color: red;
+    border: none;
+    width: 100%;
+    border-radius: 8px;;
+  }
+}
+

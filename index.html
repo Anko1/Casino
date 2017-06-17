@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Casino</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+
+<h1>Annapolis</h1>
+
+<div id="slot-wrapper">
+
+</div>
+
+<div id="casino-control">
+    <div class="info">
+        <span></span>
+    </div>
+    <div>
+        <button id="add">ADD</button>
+    </div>
+</div>
+
+<div id="sm-info-wrapper">
+    <div>
+        <button id="get">Get</button>
+        <input type="number" placeholder="money" min="1">
+        <span class="total-from">200</span>
+    </div>
+    <div>
+        <button id="put">Put</button>
+        <input type="number" placeholder="money" min="1">
+        <span class="total-to">200</span>
+    </div>
+    <div>
+        <button id="remove">remove</button>
+    </div>
+
+    <button onclick="$('#sm-info-wrapper').hide();" class="exit">x</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>-->
+<script src="js/SlotMachine.js"></script>
+<script src="js/Casino.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
