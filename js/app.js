@@ -1,5 +1,7 @@
+const MyCasino =  new Casino(12, 270);
+
 $(function () {
-   window.casino = new Casino(12, 270);
+   //window.casino = new Casino(12, 270);
     $('#sm-info-wrapper').hide();
 
 
