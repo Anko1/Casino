@@ -73,8 +73,8 @@ function SlotMachine(money) {
         // console.log(msg.win);
         _putCash(-msg.win);
 
-
-        window.casino.updateInfo();
+        MyCasino.updateInfo();
+        //window.casino.updateInfo();
 
         return msg;
     }
@@ -124,7 +124,8 @@ function SlotMachine(money) {
             });
             
             $('#remove').click(function () {
-                window.casino.removeSM(id);
+                MyCasino.removeSM(id);
+                //window.casino.removeSM(id);
 
                 $('#sm-info-wrapper').hide();
             });
